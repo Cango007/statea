@@ -21,4 +21,6 @@ public interface StateService {
     public List<State> findByGrade(String grade);
 
     public List<State> findByGdpBetween(Integer a,Integer b);
+
+    public List<State> findByGradeBetween(String a,String b);
 }
