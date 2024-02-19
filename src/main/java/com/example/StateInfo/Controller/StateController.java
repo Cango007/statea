@@ -65,6 +65,10 @@ public class StateController {
     public ResponseEntity<List<State>> findByGdpBetween(@PathVariable Integer a,@PathVariable Integer b) {
         return new ResponseEntity<List<State>>( stateService.findByGdpBetween(a,b),HttpStatus.OK);
     }
+    @GetMapping("findByGradeBetween/{a}/{b}")
+    public List<State> findByGradeBetween(@PathVariable String a,@PathVariable String b) {
+        return stateService.findByGradeBetween(a,b);
+    }
 
 
 

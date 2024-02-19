@@ -56,4 +56,9 @@ public class StateServiceImpl implements StateService {
     public List<State> findByGdpBetween(Integer a, Integer b) {
         return stateRepo.findByGdpBetween(a,b);
     }
+
+    @Override
+    public List<State> findByGradeBetween(String a, String b) {
+        return stateRepo.findByGradeBetween(a,b);
+    }
 }
